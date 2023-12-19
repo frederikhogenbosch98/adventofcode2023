@@ -21,7 +21,6 @@ with open("data/day1.txt", "r") as file:
             if len(idxs) != 0:
                 idxs.extend(digits)
                 idx_words.extend(digits_idx)
-
                 
                 full_digits, full_indices  = (list(t) for t in zip(*sorted(zip(idx_words, idxs))))
             else:
@@ -35,9 +34,5 @@ with open("data/day1.txt", "r") as file:
             print("")
 
             cal_values.append(z)
-
-
-
-
 
 print(sum(cal_values))
