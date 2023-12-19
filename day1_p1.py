@@ -1,6 +1,6 @@
 cal_values = []
 
-with open("data/day1.txt", "r") as file:  # the a opens it in append mode
+with open("data/day1.txt", "r") as file:
         file_lines = file.readlines()
         for line in file_lines:
             digits = (list(filter(str.isdigit, line)))
